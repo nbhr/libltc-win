@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libltc", "libltc.vcxproj", "{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example_encode", "tests\example_encode\example_encode.vcxproj", "{96E48E84-3D87-458B-9FBD-03D482523BD0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15} = {E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ltcdecode", "tests\ltcdecode\ltcdecode.vcxproj", "{22076EE7-8AF0-43C5-AB11-AD98179BBD3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15} = {E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ltcencode", "tests\ltcencode\ltcencode.vcxproj", "{53D76BF4-58D9-48D9-8160-876105B8B428}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15} = {E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}.Debug|x64.ActiveCfg = Debug|x64
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}.Debug|x64.Build.0 = Debug|x64
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}.Release|x64.ActiveCfg = Release|x64
+		{E82E2FE4-B9F4-42A0-B5AF-0E2B2C169A15}.Release|x64.Build.0 = Release|x64
+		{96E48E84-3D87-458B-9FBD-03D482523BD0}.Debug|x64.ActiveCfg = Debug|x64
+		{96E48E84-3D87-458B-9FBD-03D482523BD0}.Debug|x64.Build.0 = Debug|x64
+		{96E48E84-3D87-458B-9FBD-03D482523BD0}.Release|x64.ActiveCfg = Release|x64
+		{96E48E84-3D87-458B-9FBD-03D482523BD0}.Release|x64.Build.0 = Release|x64
+		{22076EE7-8AF0-43C5-AB11-AD98179BBD3A}.Debug|x64.ActiveCfg = Debug|x64
+		{22076EE7-8AF0-43C5-AB11-AD98179BBD3A}.Debug|x64.Build.0 = Debug|x64
+		{22076EE7-8AF0-43C5-AB11-AD98179BBD3A}.Release|x64.ActiveCfg = Release|x64
+		{22076EE7-8AF0-43C5-AB11-AD98179BBD3A}.Release|x64.Build.0 = Release|x64
+		{53D76BF4-58D9-48D9-8160-876105B8B428}.Debug|x64.ActiveCfg = Debug|x64
+		{53D76BF4-58D9-48D9-8160-876105B8B428}.Debug|x64.Build.0 = Debug|x64
+		{53D76BF4-58D9-48D9-8160-876105B8B428}.Release|x64.ActiveCfg = Release|x64
+		{53D76BF4-58D9-48D9-8160-876105B8B428}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0C3CD81-EF4A-4EB7-B236-8805224BDB66}
+	EndGlobalSection
+EndGlobal

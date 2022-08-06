@@ -1,3 +1,7 @@
+msvc/.vs
+msvc/x64
+msvc/tests/*/x64
+
 cscope.*
 tags
 
